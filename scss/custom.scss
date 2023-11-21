@@ -6,3 +6,16 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+.navbar {
+    background-color: blue !important;
+}
+
+.container-fluid {
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    width: 16.66%;
+    text-align: center;
+    color: white;
+}
