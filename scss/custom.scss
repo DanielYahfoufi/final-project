@@ -1,21 +1,83 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 
+$h1-font-size: 4rem;
+$h2-font-size: 2.441rem;
+$h3-font-size: 1.953rem;
+$h4-font-size: 1.563rem;
+$h5-font-size: 1.25rem;
+$h6-font-size:  1rem;      
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+
 // Then add additional custom code here
+header {
+    background-color: #007bff;
+}
+
+header img {
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px 0 40px;
+}
+
+img {
+    width: 100%;
+}
+
+footer .d-flex img {
+    width: 40px;
+    
+}
+
+.taste {
+    color: white;
+}
+
 .navbar {
-    background-color: blue !important;
+    background-color: #007bff !important;
+    border-top: solid 20px white;
 }
 
 .container-fluid {
     justify-content: space-between;
 }
 
-.navbar-brand {
+.nav-item {
     width: 16.66%;
+}
+
+.nav-link {
+    width: 100%;
     text-align: center;
     color: white;
+}
+
+.social-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-link {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.block-link > a {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .footer-flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-container {
+        justify-content: center;
+    }
 }
